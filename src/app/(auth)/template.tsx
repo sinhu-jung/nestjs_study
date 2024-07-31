@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import './style.css';
+import { useState } from 'react';
 
 const navLinks = [
   { name: 'Register', href: '/register' },
@@ -14,9 +15,13 @@ export default function ProductsLayout({
   children: React.ReactNode;
 }) {
   const pathName = usePathname();
+  const [input, setInput] = useState('');
 
   return (
     <>
+      <div>
+        <input value={input} onChange={(e) => setInput(e.target.value)} />
+      </div>
       {navLinks.map((link) => {
         const isActive = pathName.startsWith(link.href);
         return (
