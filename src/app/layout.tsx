@@ -9,7 +9,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="ko">
+    <html lang="en">
       <body>
         <header style={{ backgroundColor:'lightblue', padding:'1rem'}}>
           <p>Header</p>
@@ -18,7 +18,7 @@ export default function RootLayout({
         <footer style={{ backgroundColor:'ghostwhite', padding:'1rem'}}>
           <p>Footer</p>
         </footer>
-        </body>
+      </body>
     </html>
   )
 }
