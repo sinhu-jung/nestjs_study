@@ -4,11 +4,11 @@ import * as React from 'react';
 
 export interface IAppProps {}
 
-export default function Notifications(props: IAppProps) {
+export default function ArchivedNotifications(props: IAppProps) {
   return (
     <Card>
-      <div>Notifications</div>
-      <Link href="/complex-dashboard/archived">Archived</Link>
+      <div>ArchivedNotifications</div>
+      <Link href={'/complex-dashboard'}>Default</Link>
     </Card>
   );
 }

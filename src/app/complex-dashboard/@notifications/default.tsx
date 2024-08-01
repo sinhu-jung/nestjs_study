@@ -4,7 +4,7 @@ import * as React from 'react';
 
 export interface IAppProps {}
 
-export default function Notifications(props: IAppProps) {
+export default function DefaultNotifications(props: IAppProps) {
   return (
     <Card>
       <div>Notifications</div>
