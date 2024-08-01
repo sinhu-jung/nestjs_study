@@ -5,10 +5,13 @@ export interface IAppProps {
   users: React.ReactNode;
   revenue: React.ReactNode;
   notifications: React.ReactNode;
+  login: React.ReactNode;
 }
 
 export default function DashboardLayout(props: IAppProps) {
-  return (
+  const isLoggedIn = false;
+
+  return isLoggedIn ? (
     <div>
       <div>{props.children}</div>
       <div style={{ display: 'flex' }}>
@@ -19,5 +22,7 @@ export default function DashboardLayout(props: IAppProps) {
         <div style={{ display: 'flex', flex: 1 }}>{props.notifications}</div>
       </div>
     </div>
+  ) : (
+    props.login
   );
 }
