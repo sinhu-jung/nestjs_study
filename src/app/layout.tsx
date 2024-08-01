@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import Image from 'next/image';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -17,9 +16,6 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <header>
-        <Image src={'/mainIcon.svg'} alt="mainIcon" width={49} height={26} />
-      </header>
       <body className={inter.className}>{children}</body>
     </html>
   );
