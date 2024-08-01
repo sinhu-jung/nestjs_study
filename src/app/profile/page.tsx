@@ -1,7 +1,5 @@
 import * as React from 'react';
 
-export interface IAppProps {}
-
-export default function ProfilePage(props: IAppProps) {
+export default function ProfilePage() {
   return <h1>Profile page</h1>;
 }
